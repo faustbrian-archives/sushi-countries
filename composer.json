@@ -19,6 +19,7 @@
         "php": "^7.4",
         "calebporzio/sushi": "^1.0",
         "illuminate/database": "^6.0",
+        "kodekeep/mobile-codes": "^1.0",
         "mledoze/countries": "^3.0"
     },
     "require-dev": {
