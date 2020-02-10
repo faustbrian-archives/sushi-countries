@@ -17,16 +17,33 @@ composer require kodekeep/sushi-countries
 
 ## Usage
 
-``` php
+### Country
+
+```php
 use KodeKeep\SushiCountries\Country;
 
 Country::where('code', 'FI')->first();
-
 Country::where('code3', 'FIN')->first();
-
 Country::where('name', 'Finland')->first();
-
 Country::where('number', 246)->first();
+```
+
+### Canadian Province
+
+```php
+use KodeKeep\SushiCountries\CanadianProvince;
+
+CanadianProvince::where('name', 'Alberta')->first();
+CanadianProvince::where('abbreviation', 'AB')->first();
+```
+
+### United State
+
+```php
+use KodeKeep\SushiCountries\UnitedState;
+
+UnitedState::where('name', 'California')->first();
+UnitedState::where('abbreviation', 'CA')->first();
 ```
 
 ## Testing

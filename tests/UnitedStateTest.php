@@ -27,18 +27,18 @@ class UnitedStateTest extends TestCase
     }
 
     /** @test */
-    public function can_find_a_province_by_name(): void
+    public function can_find_a_state_by_name(): void
     {
-        $province = UnitedState::where('name', 'California')->first();
+        $state = UnitedState::where('name', 'California')->first();
 
-        $this->assertSame('California', $province->name);
+        $this->assertSame('California', $state->name);
     }
 
     /** @test */
-    public function can_find_a_province_by_abbreviation(): void
+    public function can_find_a_state_by_abbreviation(): void
     {
-        $province = UnitedState::where('abbreviation', 'CA')->first();
+        $state = UnitedState::where('abbreviation', 'CA')->first();
 
-        $this->assertSame('California', $province->name);
+        $this->assertSame('California', $state->name);
     }
 }
