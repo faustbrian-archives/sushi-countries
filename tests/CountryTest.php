@@ -16,7 +16,7 @@ namespace KodeKeep\SushiCountries\Tests;
 use KodeKeep\SushiCountries\Country;
 
 /**
- * @coversNothing
+ * @covers \KodeKeep\SushiCountries\Country
  */
 class CountryTest extends TestCase
 {
