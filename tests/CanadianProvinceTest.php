@@ -21,7 +21,7 @@ use KodeKeep\SushiCountries\CanadianProvince;
 class CanadianProvinceTest extends TestCase
 {
     /** @test */
-    public function can_count_all_countries(): void
+    public function can_count_all_provinces(): void
     {
         $this->assertCount(13, CanadianProvince::get());
     }

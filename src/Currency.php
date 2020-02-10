@@ -16,7 +16,7 @@ namespace KodeKeep\SushiCountries;
 use Illuminate\Database\Eloquent\Model;
 use Sushi\Sushi;
 
-class Country extends Model
+class Currency extends Model
 {
     use Sushi;
 
@@ -25,12 +25,15 @@ class Country extends Model
         $database = \json_decode(\file_get_contents('vendor/mledoze/countries/dist/countries.json'), true);
 
         return collect($database)
-            ->map(fn ($country) => [
-                'code'   => $country['cca2'],
-                'code3'  => $country['cca3'],
-                'name'   => $country['name']['common'],
-                'number' => $country['ccn3'],
-            ])
+            ->map(function ($country) {
+                return collect($country['currencies'])->map(fn ($currency, $abbreviation) => [
+                    'name'         => $currency['name'],
+                    'abbreviation' => $abbreviation,
+                    'symbol'       => $currency['symbol'],
+                ]);
+            })
+            ->flatten(1)
+            ->unique('name')
             ->toArray();
     }
 }
