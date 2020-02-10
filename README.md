@@ -46,6 +46,16 @@ UnitedState::where('name', 'California')->first();
 UnitedState::where('abbreviation', 'CA')->first();
 ```
 
+### Currency
+
+```php
+use KodeKeep\SushiCountries\Currency;
+
+Currency::where('name', 'Euro')->first();
+Currency::where('abbreviation', 'EUR')->first();
+Currency::where('symbol', '€')->first();
+```
+
 ## Testing
 
 ``` bash
