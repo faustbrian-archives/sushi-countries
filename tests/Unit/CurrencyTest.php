@@ -11,9 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\SushiCountries\Tests;
+namespace KodeKeep\SushiCountries\Tests\Unit;
 
 use KodeKeep\SushiCountries\Currency;
+use KodeKeep\SushiCountries\Tests\TestCase;
 
 /**
  * @covers \KodeKeep\SushiCountries\Currency

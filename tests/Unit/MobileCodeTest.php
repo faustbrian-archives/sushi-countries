@@ -11,9 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\SushiCountries\Tests;
+namespace KodeKeep\SushiCountries\Tests\Unit;
 
 use KodeKeep\SushiCountries\MobileCode;
+use KodeKeep\SushiCountries\Tests\TestCase;
 
 /**
  * @covers \KodeKeep\SushiCountries\MobileCode
@@ -21,7 +22,7 @@ use KodeKeep\SushiCountries\MobileCode;
 class MobileCodeTest extends TestCase
 {
     /** @test */
-    public function can_count_all_countries(): void
+    public function can_count_all_mobile_codes(): void
     {
         $this->assertCount(1690, MobileCode::get());
     }

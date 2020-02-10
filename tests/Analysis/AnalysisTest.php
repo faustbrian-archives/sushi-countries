@@ -11,10 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\SushiCountries\Tests;
+namespace KodeKeep\SushiCountries\Tests\Analysis;
 
 use GrahamCampbell\Analyzer\AnalysisTrait;
-use PHPUnit\Framework\TestCase;
+use KodeKeep\SushiCountries\Tests\TestCase;
 
 /**
  * @coversNothing
@@ -26,7 +26,7 @@ class AnalysisTest extends TestCase
     public function getPaths(): array
     {
         return [
-            realpath(__DIR__.'/../src'),
+            realpath(__DIR__.'/../../src'),
             realpath(__DIR__),
         ];
     }
