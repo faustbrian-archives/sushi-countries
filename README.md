@@ -1,13 +1,13 @@
 # Sushi Countries
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/sushi-countries/run-tests?label=tests)](https://github.com/kodekeep/sushi-countries/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/sushi-countries)](https://codecov.io/gh/kodekeep/sushi-countries)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/sushi-countries)](https://packagist.org/packages/kodekeep/sushi-countries)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/sushi-countries)](https://packagist.org/packages/kodekeep/sushi-countries)
+[![Software License](https://badgen.net/packagist/license/kodekeep/sushi-countries)](https://packagist.org/packages/kodekeep/sushi-countries)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/sushi-countries/run-tests?label=tests)](https://github.com/kodekeep/sushi-countries/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/sushi-countries)](https://codeclimate.com/github/kodekeep/sushi-countries)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/sushi-countries)](https://codeclimate.com/github/kodekeep/sushi-countries)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/sushi-countries)](https://packagist.org/packages/kodekeep/sushi-countries)
-[![License](https://badgen.net/packagist/license/kodekeep/sushi-countries)](https://packagist.org/packages/kodekeep/sushi-countries)
 
-> Countries for [calebporzio/sushi](https://github.com/calebporzio/sushi)
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides models to work with countries for [calebporzio/sushi](https://github.com/calebporzio/sushi)
 
 ## Installation
 
@@ -78,6 +78,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+Sushi Countries is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
