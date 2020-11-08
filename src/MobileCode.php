@@ -22,7 +22,11 @@ class MobileCode extends Model
 
     public function getRows()
     {
-        $database = \json_decode(\file_get_contents('vendor/kodekeep/mobile-codes/dist/unsorted/data.json'), true);
+        $filepath = strpos(getcwd(), 'public') === strlen(getcwd()) - strlen('public')
+            ? base_path('vendor/kodekeep/mobile-codes/dist/unsorted/data.json')
+            : 'vendor/kodekeep/mobile-codes/dist/unsorted/data.json';
+
+        $database = \json_decode(\file_get_contents($filepath), true);
 
         return collect($database)
             ->map(fn ($country) => [

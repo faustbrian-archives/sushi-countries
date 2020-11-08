@@ -22,7 +22,11 @@ class Currency extends Model
 
     public function getRows()
     {
-        $database = \json_decode(\file_get_contents('vendor/mledoze/countries/dist/countries.json'), true);
+        $filepath = strpos(getcwd(), 'public') === strlen(getcwd()) - strlen('public')
+            ? base_path('vendor/mledoze/countries/dist/countries.json')
+            : 'vendor/mledoze/countries/dist/countries.json';
+
+        $database = \json_decode(\file_get_contents($filepath), true);
 
         return collect($database)
             ->map(function ($country) {
