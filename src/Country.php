@@ -22,7 +22,7 @@ class Country extends Model
 
     public function getRows()
     {
-        $database = \json_decode(\file_get_contents('vendor/mledoze/countries/dist/countries.json'), true);
+        $database = \json_decode(\file_get_contents(base_path('vendor/mledoze/countries/dist/countries.json')), true);
 
         return collect($database)
             ->map(fn ($country) => [
